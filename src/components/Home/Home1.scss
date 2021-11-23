@@ -1,0 +1,272 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teams {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conference-name {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.conference-east {
+    color: #3978D2;
+}
+
+.conference-west {
+    color: #D4455E;
+}
+
+.team {
+    width: 50%;
+    padding-bottom: 120px;
+}
+
+.team-east {
+    background: linear-gradient(180deg, #FFFFFF 0%, #0E499D 100%);
+    // background: linear-gradient(177.14deg, #FFFFFF 15.04%, #0E499D 96.97%);
+}
+
+.team-west {
+    background: linear-gradient(180deg, #FFFFFF 0%, #D30529 100%);
+    // background: linear-gradient(182.86deg, #FFFFFF 15.23%, #D30529 97.62%);
+}
+
+.teams-wrapper {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px 10px 33px;
+    border-radius: 30px;
+    box-shadow: -5px 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.team-card:hover {
+    .team-name {
+        opacity: 0;
+        transition: all ease .4s;
+    }
+
+    .team-logo {
+        width: 180px;
+        height: 180px;
+        transition: all ease-in-out .4s;
+    }
+}
+    
+.team-logo {
+    width: 120px;
+    height: 120px;
+    transition: all ease-in-out .2s;
+}
+
+.team-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    transition: all ease .2s;
+}
+
+@media (max-width: 1840px) {
+    .teams-wrapper {
+        width: 70%;
+    }
+
+    .team-card {
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .teams-wrapper {
+        width: 80%;
+    }
+    
+    .team-card {
+        flex-basis: 45%;
+        height: 200px;
+    }
+
+    .team-card:hover {
+        .team-logo{
+            width: 160px;
+            height: 160px;
+        }
+    }
+
+    .team-name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .teams-wrapper {
+        width: 85%;
+    }
+
+    .team-card {
+        flex-basis: 48%;
+    }
+}
+
+@media (max-width: 900px) {
+    .team-card {
+        padding: 20px 10px 25px;
+        height: 180px;
+    }
+
+    .team-card:hover {
+        .team-logo{
+            width: 135px;
+            height: 135px;
+        }
+    }
+
+    .team-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .team-name {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 790px) {
+    .teams-wrapper {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .team-card {
+        flex-basis: 55%;
+    }
+
+    .conference-name {
+        font-size: 26px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .team-card {
+        flex-basis: 65%;
+        height: 170px;
+    }
+
+    .team-card:hover {
+        .team-logo{
+            width: 130px;
+            height: 130px;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .conference-name {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .teams {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team {
+        background: none;
+        width: 80%;
+    }
+
+    .team-east {
+        padding-bottom: 40px;
+    }
+
+    .conference-name {
+        font-size: 28px;
+    }
+
+    .conference-west {
+        margin-top: 40px;
+    }
+
+    .teams-wrapper {
+        align-items: center;
+    }
+
+    .team-card {
+        height: 200px;
+        padding: 20px 20px 33px;
+    }
+
+    .team-card:hover {
+        .team-logo{
+            width: 160px;
+            height: 160px;
+        }
+    }
+
+    .team-logo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 420px) {
+    .team {
+        width: 85%;
+    }
+
+    .team-card {
+        padding-top: 30px;
+    }
+
+    .team-card:hover {
+        .team-logo{
+            width: 130px;
+            height: 130px;
+        }
+    }
+
+    .team-logo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 320px) {
+    .team {
+        width: 100%;
+    }
+
+    .conference-name {
+        font-size: 24px;
+    }
+}

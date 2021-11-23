@@ -1,0 +1,163 @@
+.player-profile {
+    padding: 160px 0;
+    background: #e6e6e6;
+}
+
+.player-profile-wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 70px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.player-profile span:not(:last-child) {
+    margin-right: 30px;
+}
+
+.player-header {
+    display: flex;
+    align-items: center;
+}
+
+.player-profile-photo {
+    width: 260px;
+    height: 190px;
+}
+
+.player-profile-name {
+    display: flex;
+    align-items: baseline;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.player-team {
+    font-size: 22px;
+}
+
+.player-stats {
+    margin-top: 50px;
+    font-size: 22px;
+
+    section::after {
+        content: '';
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        border-bottom: 2px solid #E7E7E7;
+    }
+
+    p:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+.goals-made,
+.goals-attempted,
+.additional {
+    margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+    .player-profile-wrapper {
+        max-width: 950px;
+    }
+
+    .name {
+        font-size: 22px;
+    }
+    
+    .player-team, .player-stats {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .player-profile-wrapper {
+        max-width: 800px;
+    }
+
+    .player-header {
+        justify-content: space-between;
+    }
+
+    .player-profile-name {
+        flex-direction: column;
+    }
+
+    .player-profile span:not(:last-child) {
+        margin: 0;
+    }
+
+    .player-team, .player-stats {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 850px) {
+    .player-profile {
+        padding: 80px 0;
+    }
+
+    .player-profile-wrapper {
+        max-width: 650px;
+        padding: 60px;
+    }
+}
+
+@media (max-width: 710px) {
+    .player-profile-wrapper {
+        max-width: 550px;
+    }
+
+    .player-header {
+        flex-direction: column;
+    }
+
+    .player-profile-name {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .player-team {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .player-profile-wrapper {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 460px) {
+    .player-profile-wrapper {
+        max-width: 350px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+    
+    .player-team, .player-stats {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    .player-profile-wrapper {
+        max-width: 300px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .player-profile-wrapper {
+        max-width: 280px;
+    }
+}

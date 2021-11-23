@@ -1,0 +1,300 @@
+.team-profile {
+    padding: 160px 0;
+    background: #e6e6e6;
+}
+
+.list-of-players {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 89px 40px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-profile-name {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.team-profile-name::after {
+    content: '';
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.team-profile-head {
+    display: flex;
+    margin-top: 12px;
+    padding: 14px 20px 14px 10px;
+    list-style: none;
+    background-color: #E7E7E7;
+
+    li {
+        font-weight: 700;
+        margin-right: 100px;
+        font-size: 10px;
+        line-height: 14px;
+        color: #545454;
+    }
+
+    li:first-child {
+        margin-right: 250px;
+    }
+
+    li:last-child {
+        margin: 0;
+    }
+}
+
+.team-profile-body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    list-style: none;
+    color: #000;
+    
+    li {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+.team-profile-body::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 32px;
+    margin-top: 5px;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.player-photo {
+    margin-right: 10px;
+    object-fit: cover;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.player-name {
+    display: flex;
+    align-items: center;
+    width: 297px;
+    color: #0268D6;
+}
+
+.player-num {
+    width: 112px;
+}
+
+.player-pos {
+    width: 124px;
+}
+
+.player-height {
+    width: 128px;
+}
+
+@media (max-width: 1000px) {
+    .list-of-players {
+        max-width: 700px;
+        padding: 30px 30px 40px;
+    }
+
+    .team-profile-head {
+        li {
+            margin-right: 80px;
+        }
+
+        li:first-child {
+            margin-right: 220px;
+        }
+    }
+
+    .player-name {
+        width: 267px;
+    }
+    
+    .player-num {
+        width: 92px;
+    }
+    
+    .player-pos {
+        width: 104px;
+    }
+    
+    .player-height {
+        width: 110px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-profile {
+        padding: 80px 0;
+    }
+
+    .list-of-players {
+        max-width: 600px;
+    }
+
+    .team-profile-head {
+        li {
+            margin-right: 60px;
+        }
+
+        li:first-child {
+            margin-right: 180px;
+        }
+    }
+
+    .player-name {
+        width: 227px;
+    }
+    
+    .player-num {
+        width: 73px;
+    }
+    
+    .player-pos {
+        width: 84px;
+    }
+    
+    .player-height {
+        width: 88px;
+    }
+}
+
+@media (max-width: 640px) {
+    .list-of-players {
+        max-width: 540px;
+    }
+
+    .team-profile-head {
+        li {
+            margin-right: 55px;
+        }
+
+        li:first-child {
+            margin-right: 145px;
+        }
+    }
+
+    .team-profile-body {    
+        li {
+            font-size: 12px;
+        }
+    }
+
+    .player-name {
+        width: 192px;
+    }
+    
+    .player-num {
+        width: 68px;
+    }
+    
+    .player-pos {
+        width: 80px;
+    }
+    
+    .player-height {
+        width: 84px;
+    }
+}
+
+@media (max-width: 560px) {
+    .list-of-players {
+        max-width: 455px;
+    }
+
+    .team-profile-head {
+        li {
+            margin-right: 45px;
+        }
+
+        li:nth-child(2) {
+            display: none;
+        }
+
+        li:first-child {
+            margin-right: 140px;
+        }
+    }
+
+    .player-name {
+        width: 192px;
+    }
+    
+    .player-num {
+        display: none;
+    }
+    
+    .player-pos {
+        width: 72px;
+    }
+    
+    .player-height {
+        width: 75px;
+    }
+}
+
+@media (max-width: 500px) {
+    .list-of-players {
+        max-width: 380px;
+    }
+
+    .team-profile-head {
+        li:nth-child(3) {
+            display: none;
+        }
+
+        li:first-child {
+            margin-right: 140px;
+        }
+    }
+
+    .player-name {
+        width: 197px;
+    }
+    
+    .player-pos {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .team-profile-name {
+        font-size: 16px;
+    }
+
+    .list-of-players {
+        max-width: 250px;
+    }
+
+    .team-profile-head {
+        li:nth-child(4), li:nth-child(5) {
+            display: none;
+        }
+
+        li:first-child {
+            margin-right: 0;
+        }
+    }
+
+    .player-name {
+        width: 100%;
+    }
+
+    .player-height, .player-weight {
+        display: none;
+    }
+}
