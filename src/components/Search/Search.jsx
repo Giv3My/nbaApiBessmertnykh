@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Icon from "../../assets/search-player-ico.png"
+import Icon from "../../assets/loupe.png"
 import './Search.scss';
 
 export default function Search() {
